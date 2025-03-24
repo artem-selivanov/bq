@@ -34,6 +34,10 @@ app.post('/query', async (req, res) => {
     }
 });
 
-app.listen(port, () => {
+app.listen(3000, '0.0.0.0', () => {
     console.log(`Server running at http://localhost:${port}`);
 });
+/*
+app.listen(port, () => {
+    console.log(`Server running at http://localhost:${port}`);
+});*/
