@@ -3,7 +3,7 @@ const express = require('express');
 const { BigQuery } = require('@google-cloud/bigquery');
 
 const app = express();
-const port = 3000;
+const port = 5100;
 
 // Используем переменные из .env
 const API_KEY = process.env.API_KEY;
