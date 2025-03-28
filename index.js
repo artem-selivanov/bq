@@ -6,7 +6,7 @@ const NodeCache = require('node-cache');
 
 const app = express();
 const port = 5100;
-const cache = new NodeCache({ stdTTL: 60 }); // Кеш на 60 секунд
+const cache = new NodeCache({ stdTTL: 3660 }); // Кеш на 60 секунд
 
 const API_KEY = process.env.API_KEY;
 const PROJECT_ID = process.env.PROJECT_ID;
