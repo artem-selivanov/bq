@@ -32,9 +32,9 @@ app.post('/query', async (req, res) => {
     limit = Math.min(limit, MAX_LIMIT);
     const offset = (page - 1) * limit;
 
-    /*if (!query.toLowerCase().includes('limit')) {
+    if (!query.toLowerCase().includes('limit')) {
         query += ` LIMIT ${limit} OFFSET ${offset}`;
-    }*/
+    }
 
     const cachedData = cache.get(query);
     if (cachedData) {
